@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+    background-color: var(--bgc);
+    color: white;
+}
+
+:root{
+    --bgc: #129915;
+    --base: orange;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+span{
+    color: var(--base);
+}
+
+img{
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
+
+@media (max-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    input#base{
+        align-self: center;
+    }
+}
